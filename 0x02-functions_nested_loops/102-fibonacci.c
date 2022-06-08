@@ -1,29 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - print first 50 Fibonacci numbers
- * Return: 0
+ * main - Prints the add of the Fibonacci numbers
+ *
+ * Return: Always 0.
  */
-
 int main(void)
 {
-	int counter;
-	int countto = 50;
-	long a = 1;
-	long b = 2;
+	int c;
+	long int n1, n2, fn;
 
-	for (counter = 1; counter <= (countto / 2); counter++)
+	n1 = 1;
+	n2 = 2;
+	printf("%ld, %ld", n1, n2);
+	for (c = 0; c < 48; c++)
 	{
-		printf("%li, %li, ", a, b);
-		a += b;
-		b += a;
+		fn = n1 + n2;
+		printf(", %ld", fn);
+		n1 = n2;
+		n2 = fn;
 	}
-	if (countto % 2 == 1)
-	{
-		printf("%li", a);
-	}
-
 	printf("\n");
-
 	return (0);
 }
