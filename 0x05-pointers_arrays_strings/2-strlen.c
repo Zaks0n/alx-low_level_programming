@@ -3,7 +3,7 @@
 /**
  * _strlen - a function to return length of String
  * @s: char
- * Retuen: length of input
+ * Return: length of input
  */
 
 int _strlen(char *s)
